@@ -10,12 +10,13 @@ const MemberSchema = new mongoose.Schema({
     type: String,
     required: true,
     trim: true,
+    default: "Member"
   },
   image: {
     type: String,
     required: true,
-    trim: true, // Path to the image
-  },
+    trim: true,
+  }, // Path to the image
 });
 
 module.exports = mongoose.model("Member", MemberSchema);
